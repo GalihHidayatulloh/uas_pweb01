@@ -1,0 +1,168 @@
+/* CSS untuk animasi perubahan warna pada teks "Welcome" */
+h1 {
+    animation: color-change 3s infinite;
+}
+
+@keyframes color-change {
+    0% {
+        color:hsl(24, 100%, 50%) ; /* Warna pada awal animasi */
+    }
+    50% {
+        color:whitesmoke ; /* Warna saat tengah animasi */
+    }
+    100% {
+        color: hsl(24, 100%, 50%); /* Warna saat animasi selesai */
+    }
+}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Warna teks non-aktif */
+    transition: color 0.3s; /* Efek transisi warna saat hover */
+}
+
+nav a:hover {
+    color: hsl(24, 100%, 50%); /* Warna teks saat dihover */
+}
+
+nav a.active {
+    color: #ff5733; /* Warna teks aktif (yang sedang diklik) */
+}
+/* Define general styles for the body and header */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ddd;
+}
+
+/* Style for the header/navbar when fixed */
+header.fixed {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan saat navbar tetap */
+}
+/* Style for the header/navbar */
+header {
+    background-color: #333; /* Warna latar belakang navbar */
+    position: fixed; /* Membuat navbar menjadi posisi tetap */
+    width: 100%; /* Lebar navbar mengisi seluruh lebar layar */
+    top: 0; /* Navbar akan terletak di bagian atas layar */
+    z-index: 1000; /* Menentukan kedalaman tumpukan (z-index) navbar */
+}
+
+/* Style for the navigation links in the navbar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Jarak antara tautan navigasi */
+}
+
+nav ul li a {
+    color: #fff; /* Warna teks tautan navigasi */
+    text-decoration: none;
+}
+/* CSS untuk meletakkan logo di pojok kiri atas header */
+header {
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    top: 7px; /* Atur jarak dari atas */
+    left: 22%; /* Atur jarak dari kiri */
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* CSS untuk card produk */
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Lebar maksimum card */
+    margin: 0 auto; /* Pusatkan card secara horizontal */
+    text-align: center;
+}
+
+.card img.center {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Pastikan gambar sesuai lebar card */
+}
+
+.card p {
+    font-size: 18px;
+}
+
+.price {
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+}
+
+.card button {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.card button:hover {
+    background-color: hsl(24, 100%, 50%)
+}
+/* CSS untuk footer */
+footer {
+    background-color: #333; /* Warna latar belakang footer */
+    color: #fff; /* Warna teks footer */
+    text-align: center;
+    padding: 10px 0;
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="detail.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="img/logo GF.png" type="image/png"> <!-- Menambahkan logo dengan elemen <link> -->
+    <style>
+        body {
+            text-align: center;
+        }
+        .center {
+            display: block;
+            margin: 0 auto;
+        }
+        .price {
+            font-size: 24px;
+            font-weight: bold ;
+            
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 50px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><section  class="text">
+            <h1>Welcome to Galih Furniture Store</h1></div>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#product">Products</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- In your original HTML file -->
+   <div class="card">
+    <section class="sofa" id="sofa">
+      
+    </section>
+    <img src="img/sofa.jpeg" alt="Deskripsi Gambar" class="center">
+    <p>Introducing our exquisite sofa, the perfect blend of style and comfort to elevate your living space. This luxurious piece is designed to cater to your relaxation needs while enhancing the aesthetic appeal of your home.</p>
+    <p class="product">Product: Modern Sofa</p>
+    <p class="price">Price: $599.99</p>
+    <a href="transaksi.html?product=sofa">
+    <button id="buyNowBtn">Buy Now</button>
+</a>
+</div>
+
+<script>
+    document.getElementById('buyNowBtn').addEventListener('click', function () {
+        // Get product and price information
+        var product = document.querySelector('.product').textContent.replace('Product: ', '');
+        var price = document.querySelector('.price').textContent.replace('Price: ', '');
+
+        // Create a URL with query parameters to pass data to transaksi.html
+        var url = 'transaksi.html?product=' + encodeURIComponent(product) + '&price=' + encodeURIComponent(price);
+
+        // Redirect to transaksi.html with the product and price data
+        window.location.href = url;
+    });
+</script>
+    
+    
+    <div class="card">
+        <section class="dintab" id="dintab"> 
+
+        </section>
+        <img src="img/Dinning table.jpeg" alt="Deskripsi Gambar" class="center">
+        <p>Introducing our exquisite Elegant Dining Table, the epitome of sophistication and style for your dining room. Crafted with meticulous attention to detail, this table is designed to be the centerpiece of memorable gatherings and fine dining experiences</p>
+        <p class="product">Product : Elegent Dinning Table</p>
+        <p class="price">price: $799.99</p>
+        <a href="transaksi.html?product=dintab">
+            <button id="buyNowBtn">Buy Now</button>
+        </a> </div>
+
+     <script>
+        document.getElementById('buyNowBtn').addEventListener('click', function () {
+            // Get product and price information
+            var product = document.querySelector('.product').textContent.replace('Product: ', '');
+            var price = document.querySelector('.price').textContent.replace('Price: ', '');
+    
+            // Create a URL with query parameters to pass data to transaksi.html
+            var url = 'transaksi.html?product=' + encodeURIComponent(product) + '&price=' + encodeURIComponent(price);
+    
+            // Redirect to transaksi.html with the product and price data
+            window.location.href = url;
+        });
+    </script>
+    
+    <div class="card">
+        <section class="Armchair" id="Armchair"> <!-- Tambahkan id="products" di sini -->
+            <!-- Produk Anda -->
+        </section>
+        <img src="img/Armchair.jpeg" alt="Deskripsi Gambar" class="center">
+        <p>Introducing our Cozy Armchair, the epitome of comfort and relaxation for your home. This inviting piece of furniture is designed to provide a warm and snug haven for you to unwind, read, or simply enjoy a moment of tranquility.</p>
+        <p class="product">Product : Cozy Armchair</p>
+        <p class="price">Price: $399.99</p>
+        <a href="transaksi.html?product=Armchair">
+            <button>Buy Now</button>
+        </a>
+    </div>
+
+    <script>
+        document.getElementById('buyNowBtn').addEventListener('click', function () {
+            // Get product and price information
+            var product = document.querySelector('.product').textContent.replace('Product: ', '');
+            var price = document.querySelector('.price').textContent.replace('Price: ', '');
+    
+            // Create a URL with query parameters to pass data to transaksi.html
+            var url = 'transaksi.html?product=' + encodeURIComponent(product) + '&price=' + encodeURIComponent(price);
+    
+            // Redirect to transaksi.html with the product and price data
+            window.location.href = url;
+        });
+    </script>
+    <div class="card">
+        <section class="comtab" id="comtab"> <!-- Tambahkan id="products" di sini -->
+            <!-- Produk Anda -->
+        </section>
+        <img src="img/Computer_Table.jpg" alt="Deskripsi Gambar" class="center">
+        <p>Introducing our Modern Computer Table, the perfect blend of functionality and style to enhance your home office or workspace. This sleek and versatile piece of furniture is designed to optimize your productivity and create an organized and stylish work environment</p>
+        <p class="product">Product : Modern Computer Table</p>
+        <p class="price">Price: $299.99</p>
+        <a href="transaksi.html?product=comtab">
+            <button>Buy Now</button>
+        </a>
+    </div>
+    <script>
+        document.getElementById('buyNowBtn').addEventListener('click', function () {
+            // Get product and price information
+            var product = document.querySelector('.product').textContent.replace('Product: ', '');
+            var price = document.querySelector('.price').textContent.replace('Price: ', '');
+    
+            // Create a URL with query parameters to pass data to transaksi.html
+            var url = 'transaksi.html?product=' + encodeURIComponent(product) + '&price=' + encodeURIComponent(price);
+    
+            // Redirect to transaksi.html with the product and price data
+            window.location.href = url;
+        });
+    </script>
+    <div class="card">
+        <section class="dresser" id="dresser"> <!-- Tambahkan id="products" di sini -->
+            <!-- Produk Anda -->
+        </section>
+        <img src="img/dresser.jpg" alt="Deskripsi Gambar" class="center">
+        <p>Introducing our Vintage Dresser, a timeless piece that adds a touch of nostalgia and elegance to your bedroom or any living space. This beautifully crafted piece of furniture is a symbol of classic charm and enduring style.</p>
+        <p class="product">Product : Vintage Dresser</p>
+        <p class="price">Price: $499.99</p>
+        <a href="transaksi.html?product=dresser">
+            <button>Buy Now</button>
+        </a>
+    </div>
+    <script>
+        document.getElementById('buyNowBtn').addEventListener('click', function () {
+            // Get product and price information
+            var product = document.querySelector('.product').textContent.replace('Product: ', '');
+            var price = document.querySelector('.price').textContent.replace('Price: ', '');
+    
+            // Create a URL with query parameters to pass data to transaksi.html
+            var url = 'transaksi.html?product=' + encodeURIComponent(product) + '&price=' + encodeURIComponent(price);
+    
+            // Redirect to transaksi.html with the product and price data
+            window.location.href = url;
+        });
+    </script>
+    <div class="card">
+        <section class="bookshelft" id="bookshelft"> <!-- Tambahkan id="products" di sini -->
+            <!-- Produk Anda -->
+        </section>
+        <img src="img/bookshelft.jpg" alt="Deskripsi Gambar" class="center">
+        <p>Introducing our Modern Bookshelf, a fusion of form and function designed to elevate your home decor while providing versatile storage solutions for your beloved books and cherished belongings</p>
+        <p class="product">Product : Modern Bookshelf</p>
+        <p class="price">Price: $249.99</p>
+        <a href="transaksi.html?product=bookshelft">
+            <button>Buy Now</button>
+        </a>
+    </div>
+    <script>
+        document.getElementById('buyNowBtn').addEventListener('click', function () {
+            // Get product and price information
+            var product = document.querySelector('.product').textContent.replace('Product: ', '');
+            var price = document.querySelector('.price').textContent.replace('Price: ', '');
+    
+            // Create a URL with query parameters to pass data to transaksi.html
+            var url = 'transaksi.html?product=' + encodeURIComponent(product) + '&price=' + encodeURIComponent(price);
+    
+            // Redirect to transaksi.html with the product and price data
+            window.location.href = url;
+        });
+    </script>
+    <div class="card">
+        <section class="wardrobe" id="wardrobe"> <!-- Tambahkan id="products" di sini -->
+            <!-- Produk Anda -->
+        </section>
+        <img src="img/wardrobe.jpg" alt="Deskripsi Gambar" class="center">
+        <p>Introducing our exquisite sofa, the perfect blend of style and comfort to elevate your living space. This luxurious piece is designed to cater to your relaxation needs while enhancing the aesthetic appeal of your home.</p>
+        <p class="product">Product : Wardrobe</p>
+        <p class="price">Price: $699.99</p>
+        <a href="transaksi.html?product=wardrobe">
+            <button>Buy Now</button>
+        </a>
+    </div>
+    <script>
+        document.getElementById('buyNowBtn').addEventListener('click', function () {
+            // Get product and price information
+            var product = document.querySelector('.product').textContent.replace('Product: ', '');
+            var price = document.querySelector('.price').textContent.replace('Price: ', '');
+    
+            // Create a URL with query parameters to pass data to transaksi.html
+            var url = 'transaksi.html?product=' + encodeURIComponent(product) + '&price=' + encodeURIComponent(price);
+    
+            // Redirect to transaksi.html with the product and price data
+            window.location.href = url;
+        });
+    </script>
+    <div class="card">
+        <section class="studydesk" id="studydesk"> <!-- Tambahkan id="products" di sini -->
+            <!-- Produk Anda -->
+        </section>
+        <img src="img/studydesk.jpg" alt="Deskripsi Gambar" class="center">
+        <p>Introducing our Study Desk, the perfect companion for your educational journey and work pursuits. This functional and stylish piece of furniture is designed to provide an organized and comfortable workspace, where you can focus, create, and excel</p>
+        <p class="product">Product : Study Desk</p>
+        <p class="price">Price: $399.99</p>
+        <a href="transaksi.html?product=studydesk">
+            <button>Buy Now</button>
+        </a>
+    </div>
+    <script>
+        document.getElementById('buyNowBtn').addEventListener('click', function () {
+            // Get product and price information
+            var product = document.querySelector('.product').textContent.replace('Product: ', '');
+            var price = document.querySelector('.price').textContent.replace('Price: ', '');
+    
+            // Create a URL with query parameters to pass data to transaksi.html
+            var url = 'transaksi.html?product=' + encodeURIComponent(product) + '&price=' + encodeURIComponent(price);
+    
+            // Redirect to transaksi.html with the product and price data
+            window.location.href = url;
+        });
+    </script>
+    <div class="card">
+        <section class="woodenmirror" id="woodenmirror"> <!-- Tambahkan id="products" di sini -->
+            <!-- Produk Anda -->
+        </section>
+        <img src="img/woodenmirror.jpg" alt="Deskripsi Gambar" class="center">
+        <p>Introducing our Wooden Mirror, a timeless piece of home decor that adds warmth, character, and elegance to any living space. This handcrafted masterpiece seamlessly blends functionality and aesthetics, creating a focal point that reflects your unique style.</p>
+        <p class="product">Product : Wooden Mirror</p>
+        <p class="price">Price: $249.99</p>
+        <a href="transaksi.html?product=woodenmirror">
+            <button>Buy Now</button>
+        </a>
+    </div>
+    <script>
+        document.getElementById('buyNowBtn').addEventListener('click', function () {
+            // Get product and price information
+            var product = document.querySelector('.product').textContent.replace('Product: ', '');
+            var price = document.querySelector('.price').textContent.replace('Price: ', '');
+    
+            // Create a URL with query parameters to pass data to transaksi.html
+            var url = 'transaksi.html?product=' + encodeURIComponent(product) + '&price=' + encodeURIComponent(price);
+    
+            // Redirect to transaksi.html with the product and price data
+            window.location.href = url;
+        });
+    </script>
+    <div class="card">
+        <section class="woodenbed" id="woodenbed"> <!-- Tambahkan id="products" di sini -->
+            <!-- Produk Anda -->
+        </section>
+        <img src="img/woodenbed.jpg" alt="Deskripsi Gambar" class="center">
+        <p>Introducing our Wooden Bed, a harmonious blend of natural beauty and modern design, designed to transform your bedroom into a serene and inviting retreat. This handcrafted masterpiece combines the warmth of wood with sleek aesthetics, creating a stunning centerpiece for your bedroom.</p>
+        <p class="product">Product : Wooden Bed</p>
+        <p class="price">Price: $449.99</p>
+        <a href="transaksi.html?product=woodenbed">
+            <button>Buy Now</button>
+        </a>
+    </div>
+    <script>
+        document.getElementById('buyNowBtn').addEventListener('click', function () {
+            // Get product and price information
+            var product = document.querySelector('.product').textContent.replace('Product: ', '');
+            var price = document.querySelector('.price').textContent.replace('Price: ', '');
+    
+            // Create a URL with query parameters to pass data to transaksi.html
+            var url = 'transaksi.html?product=' + encodeURIComponent(product) + '&price=' + encodeURIComponent(price);
+    
+            // Redirect to transaksi.html with the product and price data
+            window.location.href = url;
+        });
+    </script>
+    <div class="card">
+        <section class="wooden swing" id="wooden swing"> <!-- Tambahkan id="products" di sini -->
+            <!-- Produk Anda -->
+        </section>
+        <img src="img/wooden swing.jpg" alt="Deskripsi Gambar" class="center">
+        <p>Introducing our Wooden Swing, a charming addition to your outdoor space that combines the rustic beauty of wood with the joy of leisurely swinging. Crafted with care and designed for relaxation, this handcrafted swing brings timeless elegance and comfort to your backyard or patio.</p>
+        <p class="product">Product : Wooden Swing</p>
+        <p class="price">Price: $349.99</p>
+        <a href="transaksi.html?product=wooden swing">
+            <button>Buy Now</button>
+        </a>
+    </div>
+    <script>
+        document.getElementById('buyNowBtn').addEventListener('click', function () {
+            // Get product and price information
+            var product = document.querySelector('.product').textContent.replace('Product: ', '');
+            var price = document.querySelector('.price').textContent.replace('Price: ', '');
+    
+            // Create a URL with query parameters to pass data to transaksi.html
+            var url = 'transaksi.html?product=' + encodeURIComponent(product) + '&price=' + encodeURIComponent(price);
+    
+            // Redirect to transaksi.html with the product and price data
+            window.location.href = url;
+        });
+    </script>
+    <div class="card">
+        <section class="tvrack" id="tvrack"> <!-- Tambahkan id="products" di sini -->
+            <!-- Produk Anda -->
+        </section>
+        <img src="img/TV rack.jpg" alt="Deskripsi Gambar" class="center">
+        <p>Introducing our TV Rack, a perfect blend of functionality and style to elevate your entertainment experience. This versatile piece of furniture is designed to not only provide a secure and organized space for your television but also to enhance the overall aesthetics of your living area.</p>
+        <p class="product">Product : TV Rack</p>
+        <p class="price">Price: $499.99</p>
+        <a href="transaksi.html?product=tvrack">
+            <button>Buy Now</button>
+        </a>
+    </div>
+    <script>
+        document.getElementById('buyNowBtn').addEventListener('click', function () {
+            // Get product and price information
+            var product = document.querySelector('.product').textContent.replace('Product: ', '');
+            var price = document.querySelector('.price').textContent.replace('Price: ', '');
+    
+            // Create a URL with query parameters to pass data to transaksi.html
+            var url = 'transaksi.html?product=' + encodeURIComponent(product) + '&price=' + encodeURIComponent(price);
+    
+            // Redirect to transaksi.html with the product and price data
+            window.location.href = url;
+        });
+    </script>
+</body>
+</html>
+<footer>
+    <p>&copy; 2024 Galih Furniture Store</p>
+</footer>
+

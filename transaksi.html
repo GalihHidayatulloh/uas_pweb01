@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="transaksi.css">
+    <!-- Add any necessary styling or scripts for the order form -->
+    <script>
+        window.onload = function() {
+            // Function to get query parameters from the URL
+            function getParameterByName(name, url) {
+                if (!url) url = window.location.href;
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return decodeURIComponent(results[2].replace(/\+/g, " "));
+            }
+
+            // Get product details from the URL
+            var selectedProduct = getParameterByName('product');
+           
+            // Set the values of input fields
+            document.getElementById('selectedProduct').value = selectedProduct;
+            
+
+            // Set the current date
+            var currentDate = new Date();
+            document.getElementById('orderDate').value = currentDate.toISOString().slice(0, 10);
+
+
+
+            // Update total price based on the selected product
+            document.getElementById('selectedProduct').addEventListener('input', function() {
+                var selectedProduct = this.value;
+                
+
+                // Set the price in the form
+              
+            });
+        };
+    </script>
+</head>
+<body>
+    <h1>ORDER DETAILS</h1>
+    <form action="transaksi.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br>
+
+        <!-- Additional fields -->
+        <label for="orderDate">Order Date:</label>
+        <input type="text" id="orderDate" name="orderDate" readonly><br>
+
+        <label for="selectedProduct">Product:</label>
+        <input type="text" id="selectedProduct" name="selectedProduct" readonly><br>
+
+        
+
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>
+
+
+
